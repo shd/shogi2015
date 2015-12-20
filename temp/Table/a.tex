@@ -1,0 +1,34 @@
+\documentclass[12pt]{article}
+\usepackage[russian]{babel}
+\usepackage{CJKutf8}
+\usepackage[usebaselinestretch]{CJKvert}
+\usepackage[utf8]{inputenc}
+\usepackage[left=1.5cm,right=1.5cm,top=0.5cm]{geometry}
+\usepackage[usenames]{color}
+\usepackage{colortbl}
+\usepackage{rotating}
+\usepackage[T2A]{fontenc}
+%\usepackage{sho}
+\usepackage{setspace}
+
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+
+\begin{document}
+\begin{CJK}{UTF8}{min}
+\CJKvert
+
+\setstretch{1}
+
+\begin{tabular}{%
+|>{\columncolor{white}}l|
+>{\columncolor{white}}c|
+>{\columncolor[gray]{.8}}r|
+>{\columncolor{white}}c}
+\begin{turn}{-90}{アンヅリアノヴ・イリア}\end{turn}&
+ベクレネヴァ・ダリア&
+ベリアコフ・ダニラ&\\
+5 & два & три & 第四宿題\\ 5 & пять & шесть & 第五宿題
+\end{tabular}
+\end{CJK}
+
+\end{document}

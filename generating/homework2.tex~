@@ -1,0 +1,136 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[russian]{babel}
+\usepackage{CJKutf8}
+\usepackage[usebaselinestretch]{CJKvert}
+\usepackage[utf8]{inputenc}
+\usepackage[width=18cm, height=27cm, top=1.5cm]{geometry}
+\usepackage{rotating}
+\usepackage[T2A]{fontenc}
+\usepackage{sho}
+\usepackage{setspace}
+\usepackage{color}
+
+\definecolor{light-gray}{gray}{0.5}
+\definecolor{name}{gray}{0.5}
+
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+
+\newcommand\testwork[4]{
+%\hspace{1cm}
+%\vspace{4mm}
+{\Large 五級将棋クラブ}
+\hfill\vspace{-6mm}
+{\bfseries\large {#1}}
+{\begin{center}\Huge 第二問\end{center}}
+\vspace{-2mm}
+{\begin{center}{\large 平成二十七年九月二十四日}\\
+\end{center}}
+\vspace{-2mm}
+
+
+\begin{turn}{90}\begin{minipage}{20cm}
+\begin{center}
+{\setstretch{1.2}
+\vspace{-1cm}
+%\large Кружок сёги ЛНМО\\
+{\bfseries\large\scshape Домашняя работа №2}\\
+{24 сентября 2015 г.}\\
+{\itshape\tiny #2}}
+\end{center}
+
+\vspace{0.5cm}
+
+\setstretch{1}
+
+\begin{tabular}{lp{0.3cm}l}
+\begin{minipage}[t]{8.5cm}{\bfseries Задание 1}
+
+
+\begin{center}\shodiag{1}{#3}\end{center}
+
+Решите цумэ-сёги (мат в 1 ход).
+
+\vspace{0.5cm}
+{\itshape Ход чёрных:}
+
+\end{minipage}
+
+& &
+
+\begin{minipage}[t]{8.5cm}{\bfseries Задание 2}
+
+%\vspace{5mm}
+
+\begin{center}\shodiag{1}{#4}\end{center}
+
+Решите цумэ-сёги (мат в 1 ход).
+
+\vspace{0.5cm}
+{\itshape Ход чёрных:}
+
+
+
+\end{minipage} 
+
+\end{tabular}
+
+\vspace{2cm}
+
+\begin{center}{\scshape Кружок сёги ЛНМО, 5 класс}\end{center}
+
+\end{minipage}
+
+
+\end{turn}
+
+
+\vspace{0.5cm}
+
+{\Huge \begin{center}\color{light-gray}数学連続教育研究所\end{center}}
+\clearpage
+}
+
+\begin{document}
+
+\begin{CJK}{UTF8}{min}
+
+
+\CJKvert
+
+\input{homework2d}
+
+
+%\testwork{アンヅリアノヴ・イリア}{Андрианов Илья}{\shopiece{7}{7}{\Ss}\shopiece{1}{1}{\Ks}\shopiece{7}{2}{\Ns}}{}
+%\testwork{ベクレネヴァ・ダリア}{Бекренева Дарья}{}{}
+%\testwork{ベリアコフ・ダニラ}{Беляков Данила}{}{}
+%\testwork{ボルゾフ・アルテミイ}{Борзов Артемий}{}{}
+%\testwork{ヴェショルコヴァ・ヴァルヴァラ}{Веселкова Варвара}{}{}
+%\testwork{ヴァシェンコヴ・アレクセイ}{Ващенков Алексей}{}{}
+%\testwork{ダニロヴァ・リュボヴィ}{Данилова Любовь}{}{}
+%\testwork{ドラガン・アリナ}{Драган Арина}{}{}
+%\testwork{ドブレンコ・デニス}{Добренко Денис}{}{}
+%\testwork{ドニャマリエヴ・ルスラヌ}{Дунямалиев Руслан}{}{}
+%\testwork{エヴドキモヴァ・アリョナ}{Eвдокимова Алёна}{}{}
+%\testwork{イエメリアヌチク・ウラヂミル}{Емельянчик Владимир}{}{}
+%\testwork{イワノヴ・アントヌ・アヌトノヴィチ}{Иванов Антон Антонович}{}{}
+%\testwork{イワノヴ・アントヌ・オレゴヴィチ}{Иванов Антон Олегович}{}{}
+%\testwork{カラコゾヴ・パヴェル}{Каракозов Павел}{}{}
+%\testwork{ナザロヴ・セルゲイ}{Назаров Сергей}{}{}
+%\testwork{ネマトヴァ・リナタ}{Ниматова Рената}{}{}
+%\testwork{パルホメンコ・ゲオルギイ}{Пархоменко Георгий}{}{}
+%\testwork{ルビナ・オレシャ}{Рубина Олеся}{}{}
+%\testwork{セレブリャコヴ・イエヴゲニイ}{Серебряков Евгений}{}{}
+%\testwork{セミョノヴ天山スキイ・イェゴル}{Семенов Тянь-Шанский Егор}{}{}
+%\testwork{スホムリン・フィオドル}{Сухомлин Фёдор}{}{}
+%\testwork{ツラヴィン・アレクサンデル}{Травин Александр}{}{}
+%\testwork{トルカチョヴ・キリル}{Толкачёв Кирилл}{}{}
+%\testwork{チェクマリョヴ・ヂミツリイ}{Чекмарёв Дмитрий}{}{}
+%\testwork{チェミナワ・ソフィア}{Чеминава София}{}{}
+%\testwork{チストヴ・オレグ}{Чистов Олег}{}{}
+%\testwork{シェロヴ・ナザル}{Шеров Назар}{}{}
+
+\end{CJK}
+
+
+
+\end{document}

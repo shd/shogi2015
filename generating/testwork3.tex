@@ -1,0 +1,165 @@
+\documentclass[12pt]{scrartcl}
+\usepackage[russian]{babel}
+\usepackage{CJKutf8}
+\usepackage[usebaselinestretch]{CJKvert}
+\usepackage[utf8]{inputenc}
+\usepackage[width=18cm, height=27cm, top=1.5cm]{geometry}
+\usepackage{rotating}
+\usepackage[T2A]{fontenc}
+\usepackage{sho}
+\usepackage{setspace}
+\usepackage{color}
+
+\definecolor{light-gray}{gray}{0.5}
+\definecolor{name}{gray}{0.5}
+
+\pagenumbering{gobble}% Remove page numbers (and reset to 1)
+
+\newcommand\testwork[4]{
+%\hspace{1cm}
+%\vspace{4mm}
+{\Large 五級将棋クラブ}
+\hfill\vspace{-6mm}
+{\bf\large {#1}}
+{\begin{center}\Huge 第三試験\end{center}}
+\vspace{-2mm}
+{\begin{center}{\large 平成二十七年九月二十四日}\\
+\end{center}}
+\vspace{-2mm}
+
+
+\begin{turn}{90}\begin{minipage}{20cm}
+\begin{center}
+{\setstretch{1.2}
+\vspace{-1cm}
+%\large Кружок сёги ЛНМО\\
+{\bfseries\large\scshape Проверочная работа №3}\\
+{24 сентября 2015 г.}\\
+{\itshape\tiny #2}}
+\end{center}
+
+\vspace{0.5cm}
+
+\setstretch{1}
+
+\begin{tabular}{lp{1.6cm}lp{2cm}}
+\begin{minipage}[t]{8cm}{\bf Задание 1}
+
+
+\begin{center}\shodiag{1}{#3}\end{center}
+
+Обведите кружком все фигуры, находящиеся под боем фигур противника.
+
+\end{minipage}
+
+& &
+
+\begin{minipage}[t]{8cm}{\bf Задание 2}
+
+%\vspace{5mm}
+
+\begin{center}\shodiag{1}{#4}\end{center}
+
+Опишите позицию: перечислите все фигуры, нарисованные на диаграмме, 
+с указанием их положения.
+
+\vspace{5mm}
+
+{\itshape Белые: }
+\vspace{1cm}
+
+{\itshape Чёрные: }
+
+\vspace{1cm}
+
+
+\end{minipage} 
+
+\end{tabular}
+
+%\vspace{1cm}
+
+\begin{center}{\scshape Кружок сёги ЛНМО, 5 класс}\end{center}
+
+\end{minipage}
+
+
+\end{turn}
+
+
+\vspace{0.5cm}
+
+{\Huge \begin{center}\color{light-gray}数学連続教育研究所\end{center}}
+\clearpage
+}
+
+\begin{document}
+
+\begin{CJK}{UTF8}{min}
+
+
+\CJKvert
+
+\testwork{アンヅリアノヴ・イリア}{Андрианов Илья}{\shopiece{3}{1}{\Ks}\shopiece{2}{4}{\Rs}\shopiece{1}{2}{\Bps}\shopiece{4}{7}{\Pps}\shopiece{5}{9}{\Kg}\shopiece{2}{1}{\Bpg}\shopiece{2}{3}{\Ppg}\shopiece{2}{5}{\Ng}}{\shopiece{3}{1}{\Ks}\shopiece{6}{7}{\Bs}\shopiece{6}{3}{\Ls}\shopiece{5}{8}{\Kg}\shopiece{9}{7}{\Rpg}\shopiece{4}{4}{\Npg}}
+\testwork{ベクレネヴァ・ダリア}{Бекренева Дарья}{\shopiece{7}{8}{\Ks}\shopiece{4}{5}{\Bs}\shopiece{9}{3}{\Sps}\shopiece{5}{9}{\Rps}\shopiece{7}{3}{\Kg}\shopiece{9}{7}{\Bpg}\shopiece{3}{4}{\Rpg}\shopiece{5}{6}{\Npg}}{\shopiece{6}{8}{\Ks}\shopiece{5}{8}{\Rps}\shopiece{7}{6}{\Ns}\shopiece{2}{5}{\Kg}\shopiece{9}{1}{\Rpg}\shopiece{7}{2}{\Ppg}}
+\testwork{ベリアコフ・ダニラ}{Беляков Данила}{\shopiece{4}{2}{\Ks}\shopiece{5}{2}{\Rps}\shopiece{4}{7}{\Gs}\shopiece{1}{2}{\Pps}\shopiece{9}{2}{\Kg}\shopiece{6}{9}{\Rpg}\shopiece{8}{4}{\Bpg}\shopiece{6}{3}{\Ppg}}{\shopiece{2}{5}{\Ks}\shopiece{4}{9}{\Rps}\shopiece{5}{3}{\Lps}\shopiece{1}{9}{\Kg}\shopiece{4}{4}{\Rg}\shopiece{2}{9}{\Gg}}
+\testwork{ボルゾフ・アルテミイ}{Борзов Артемий}{\shopiece{7}{7}{\Ks}\shopiece{6}{2}{\Rs}\shopiece{2}{4}{\Pps}\shopiece{7}{4}{\Ps}\shopiece{1}{6}{\Kg}\shopiece{5}{9}{\Bg}\shopiece{6}{5}{\Ppg}\shopiece{7}{3}{\Pg}}{\shopiece{4}{1}{\Ks}\shopiece{4}{3}{\Rps}\shopiece{3}{4}{\Pps}\shopiece{4}{9}{\Kg}\shopiece{9}{2}{\Rpg}\shopiece{7}{6}{\Ppg}}
+\testwork{ヴェショルコヴァ・ヴァルヴァラ}{Веселкова Варвара}{\shopiece{7}{2}{\Ks}\shopiece{5}{3}{\Rs}\shopiece{6}{8}{\Gs}\shopiece{9}{4}{\Gs}\shopiece{9}{8}{\Kg}\shopiece{3}{8}{\Bg}\shopiece{4}{4}{\Lg}\shopiece{4}{3}{\Gg}}{\shopiece{6}{2}{\Ks}\shopiece{4}{5}{\Rs}\shopiece{7}{3}{\Pps}\shopiece{2}{7}{\Kg}\shopiece{2}{5}{\Rpg}\shopiece{4}{7}{\Ppg}}
+\testwork{ヴァシェンコヴ・アレクセイ}{Ващенков Алексей}{\shopiece{7}{5}{\Ks}\shopiece{7}{6}{\Bps}\shopiece{5}{5}{\Ps}\shopiece{2}{2}{\Rs}\shopiece{3}{8}{\Kg}\shopiece{5}{1}{\Bpg}\shopiece{8}{2}{\Ppg}\shopiece{1}{1}{\Ppg}}{\shopiece{7}{6}{\Ks}\shopiece{3}{1}{\Bps}\shopiece{6}{3}{\Ps}\shopiece{7}{9}{\Kg}\shopiece{4}{5}{\Bg}\shopiece{1}{7}{\Lpg}}
+\testwork{ダニロヴァ・リュボヴィ}{Данилова Любовь}{\shopiece{9}{1}{\Ks}\shopiece{1}{5}{\Rps}\shopiece{2}{6}{\Ps}\shopiece{9}{3}{\Ps}\shopiece{7}{5}{\Kg}\shopiece{4}{6}{\Rg}\shopiece{7}{8}{\Ppg}\shopiece{3}{2}{\Ppg}}{\shopiece{4}{7}{\Ks}\shopiece{8}{9}{\Bps}\shopiece{2}{4}{\Pps}\shopiece{4}{2}{\Kg}\shopiece{4}{3}{\Rg}\shopiece{2}{5}{\Gg}}
+\testwork{ドラガン・アリナ}{Драган Арина}{\shopiece{8}{9}{\Ks}\shopiece{1}{9}{\Bps}\shopiece{7}{2}{\Ps}\shopiece{8}{2}{\Ls}\shopiece{5}{4}{\Kg}\shopiece{2}{2}{\Rg}\shopiece{3}{7}{\Pg}\shopiece{5}{8}{\Pg}}{\shopiece{2}{9}{\Ks}\shopiece{5}{4}{\Bs}\shopiece{4}{6}{\Nps}\shopiece{8}{8}{\Kg}\shopiece{4}{4}{\Bg}\shopiece{8}{1}{\Ng}}
+\testwork{ドブレンコ・デニス}{Добренко Денис}{\shopiece{2}{5}{\Ks}\shopiece{3}{3}{\Rps}\shopiece{1}{7}{\Ps}\shopiece{6}{5}{\Pps}\shopiece{6}{3}{\Kg}\shopiece{2}{2}{\Bpg}\shopiece{7}{4}{\Pg}\shopiece{7}{5}{\Spg}}{\shopiece{9}{4}{\Ks}\shopiece{8}{5}{\Rps}\shopiece{6}{7}{\Ps}\shopiece{5}{1}{\Kg}\shopiece{9}{5}{\Rg}\shopiece{1}{6}{\Ppg}}
+\testwork{ドニャマリエヴ・ルスラヌ}{Дунямалиев Руслан}{\shopiece{6}{2}{\Ks}\shopiece{1}{4}{\Bs}\shopiece{7}{3}{\Ps}\shopiece{1}{5}{\Ls}\shopiece{8}{4}{\Kg}\shopiece{9}{8}{\Rpg}\shopiece{7}{7}{\Gg}\shopiece{9}{5}{\Ppg}}{\shopiece{1}{1}{\Ks}\shopiece{2}{9}{\Bps}\shopiece{1}{2}{\Rs}\shopiece{5}{4}{\Kg}\shopiece{1}{3}{\Rg}\shopiece{6}{8}{\Ppg}}
+\testwork{エヴドキモヴァ・アリョナ}{Eвдокимова Алёна}{\shopiece{9}{2}{\Ks}\shopiece{9}{5}{\Rps}\shopiece{3}{7}{\Gs}\shopiece{7}{2}{\Lps}\shopiece{9}{7}{\Kg}\shopiece{4}{4}{\Bpg}\shopiece{3}{8}{\Ppg}\shopiece{7}{6}{\Rg}}{\shopiece{6}{6}{\Ks}\shopiece{8}{5}{\Rs}\shopiece{1}{8}{\Pps}\shopiece{3}{8}{\Kg}\shopiece{6}{5}{\Rg}\shopiece{1}{1}{\Ng}}
+\testwork{イエメリアヌチク・ウラヂミル}{Емельянчик Владимир}{\shopiece{4}{4}{\Ks}\shopiece{7}{6}{\Bs}\shopiece{4}{3}{\Ps}\shopiece{3}{3}{\Pps}\shopiece{6}{9}{\Kg}\shopiece{1}{3}{\Rg}\shopiece{7}{5}{\Spg}\shopiece{6}{5}{\Pg}}{\shopiece{4}{8}{\Ks}\shopiece{6}{6}{\Rs}\shopiece{7}{4}{\Pps}\shopiece{1}{4}{\Kg}\shopiece{1}{9}{\Bpg}\shopiece{9}{1}{\Pg}}
+\testwork{イワノヴ・アントヌ・アヌトノヴィチ}{Иванов Антон Антонович}{\shopiece{3}{4}{\Ks}\shopiece{8}{1}{\Rs}\shopiece{7}{9}{\Gs}\shopiece{4}{6}{\Lps}\shopiece{1}{9}{\Kg}\shopiece{2}{4}{\Bg}\shopiece{4}{2}{\Rg}\shopiece{4}{7}{\Pg}}{\shopiece{7}{8}{\Ks}\shopiece{4}{5}{\Rs}\shopiece{4}{8}{\Pps}\shopiece{4}{2}{\Kg}\shopiece{1}{2}{\Bpg}\shopiece{7}{7}{\Gg}}
+\testwork{イワノヴ・アントヌ・オレゴヴィチ}{Иванов Антон Олегович}{\shopiece{9}{8}{\Ks}\shopiece{7}{5}{\Bps}\shopiece{4}{3}{\Pps}\shopiece{7}{7}{\Ps}\shopiece{9}{4}{\Kg}\shopiece{7}{8}{\Bpg}\shopiece{9}{3}{\Spg}\shopiece{6}{3}{\Ppg}}{\shopiece{4}{1}{\Ks}\shopiece{3}{4}{\Rps}\shopiece{1}{3}{\Ns}\shopiece{6}{5}{\Kg}\shopiece{8}{7}{\Bg}\shopiece{7}{4}{\Pg}}
+\testwork{カラコゾヴ・パヴェル}{Каракозов Павел}{\shopiece{9}{5}{\Ks}\shopiece{5}{7}{\Bps}\shopiece{4}{6}{\Sps}\shopiece{6}{4}{\Ps}\shopiece{2}{3}{\Kg}\shopiece{1}{1}{\Rg}\shopiece{4}{8}{\Lpg}\shopiece{8}{1}{\Ppg}}{\shopiece{4}{5}{\Ks}\shopiece{9}{6}{\Rs}\shopiece{9}{3}{\Ps}\shopiece{4}{3}{\Kg}\shopiece{9}{2}{\Bpg}\shopiece{4}{7}{\Gg}}
+\testwork{ナザロヴ・セルゲイ}{Назаров Сергей}{\shopiece{3}{1}{\Ks}\shopiece{9}{4}{\Rps}\shopiece{3}{9}{\Pps}\shopiece{1}{9}{\Sps}\shopiece{9}{8}{\Kg}\shopiece{7}{6}{\Rpg}\shopiece{9}{7}{\Pg}\shopiece{4}{1}{\Ppg}}{\shopiece{4}{3}{\Ks}\shopiece{6}{3}{\Bs}\shopiece{1}{9}{\Ls}\shopiece{5}{9}{\Kg}\shopiece{8}{4}{\Bg}\shopiece{4}{1}{\Ppg}}
+\testwork{ネマトヴァ・リナタ}{Ниматова Рената}{\shopiece{5}{7}{\Ks}\shopiece{9}{6}{\Rps}\shopiece{2}{8}{\Sps}\shopiece{3}{3}{\Pps}\shopiece{3}{1}{\Kg}\shopiece{3}{5}{\Bg}\shopiece{2}{7}{\Ppg}\shopiece{8}{3}{\Sg}}{\shopiece{8}{1}{\Ks}\shopiece{1}{5}{\Bps}\shopiece{7}{8}{\Ps}\shopiece{2}{8}{\Kg}\shopiece{9}{2}{\Bg}\shopiece{7}{3}{\Spg}}
+\testwork{パルホメンコ・ゲオルギイ}{Пархоменко Георгий}{\shopiece{1}{4}{\Ks}\shopiece{3}{9}{\Rs}\shopiece{3}{6}{\Gs}\shopiece{5}{2}{\Ls}\shopiece{6}{5}{\Kg}\shopiece{1}{7}{\Rpg}\shopiece{7}{2}{\Bg}\shopiece{8}{7}{\Lg}}{\shopiece{7}{9}{\Ks}\shopiece{2}{4}{\Rs}\shopiece{1}{4}{\Ls}\shopiece{3}{3}{\Kg}\shopiece{7}{3}{\Bpg}\shopiece{2}{6}{\Pg}}
+\testwork{ルビナ・オレシャ}{Рубина Олеся}{\shopiece{8}{8}{\Ks}\shopiece{1}{5}{\Rs}\shopiece{8}{6}{\Pps}\shopiece{9}{5}{\Nps}\shopiece{4}{3}{\Kg}\shopiece{5}{8}{\Rg}\shopiece{6}{5}{\Ppg}\shopiece{6}{6}{\Ng}}{\shopiece{3}{9}{\Ks}\shopiece{2}{5}{\Bps}\shopiece{5}{9}{\Ps}\shopiece{8}{1}{\Kg}\shopiece{9}{4}{\Rg}\shopiece{4}{9}{\Bpg}}
+\testwork{セレブリャコヴ・イエヴゲニイ}{Серебряков Евгений}{\shopiece{6}{7}{\Ks}\shopiece{3}{9}{\Bps}\shopiece{7}{4}{\Pps}\shopiece{1}{4}{\Ns}\shopiece{5}{5}{\Kg}\shopiece{7}{8}{\Bg}\shopiece{2}{8}{\Spg}\shopiece{9}{4}{\Ng}}{\shopiece{9}{5}{\Ks}\shopiece{8}{4}{\Bps}\shopiece{7}{4}{\Ps}\shopiece{6}{7}{\Kg}\shopiece{6}{1}{\Bg}\shopiece{5}{2}{\Ppg}}
+\testwork{セミョノヴ天山スキイ・イェゴル}{Семенов Тян-Шанский Егор}{\shopiece{3}{4}{\Ks}\shopiece{1}{7}{\Bps}\shopiece{7}{5}{\Pps}\shopiece{6}{3}{\Pps}\shopiece{1}{6}{\Kg}\shopiece{3}{8}{\Rg}\shopiece{6}{6}{\Pg}\shopiece{3}{1}{\Gg}}{\shopiece{5}{1}{\Ks}\shopiece{9}{2}{\Rs}\shopiece{5}{2}{\Pps}\shopiece{1}{7}{\Kg}\shopiece{1}{5}{\Rg}\shopiece{9}{5}{\Pg}}
+\testwork{スホムリン・フィオドル}{Сухомлин Фёдор}{\shopiece{8}{9}{\Ks}\shopiece{4}{8}{\Rps}\shopiece{5}{3}{\Nps}\shopiece{8}{8}{\Lps}\shopiece{2}{8}{\Kg}\shopiece{9}{7}{\Rpg}\shopiece{6}{5}{\Gg}\shopiece{5}{5}{\Spg}}{\shopiece{7}{1}{\Ks}\shopiece{2}{1}{\Bs}\shopiece{3}{6}{\Pps}\shopiece{8}{5}{\Kg}\shopiece{9}{8}{\Rg}\shopiece{9}{3}{\Pg}}
+\testwork{ツラヴィン・アレクサンデル}{Травин Александр}{\shopiece{3}{3}{\Ks}\shopiece{3}{4}{\Rs}\shopiece{8}{9}{\Ps}\shopiece{2}{2}{\Gs}\shopiece{3}{8}{\Kg}\shopiece{7}{7}{\Rg}\shopiece{6}{5}{\Lg}\shopiece{7}{6}{\Ng}}{\shopiece{2}{3}{\Ks}\shopiece{5}{7}{\Rs}\shopiece{5}{8}{\Lps}\shopiece{9}{2}{\Kg}\shopiece{4}{3}{\Rpg}\shopiece{3}{1}{\Lpg}}
+\testwork{トルカチョヴ・キリル}{Толкачёв Кирилл}{\shopiece{3}{5}{\Ks}\shopiece{6}{6}{\Rps}\shopiece{6}{2}{\Gs}\shopiece{4}{2}{\Ls}\shopiece{1}{9}{\Kg}\shopiece{3}{1}{\Bg}\shopiece{4}{7}{\Ppg}\shopiece{1}{7}{\Lpg}}{\shopiece{9}{6}{\Ks}\shopiece{9}{9}{\Rs}\shopiece{6}{3}{\Pps}\shopiece{6}{5}{\Kg}\shopiece{6}{2}{\Rg}\shopiece{5}{5}{\Npg}}
+\testwork{チェクマリョヴ・ヂミツリイ}{Чекмарёв Дмитрий}{\shopiece{8}{2}{\Ks}\shopiece{5}{6}{\Rs}\shopiece{8}{3}{\Ns}\shopiece{4}{2}{\Sps}\shopiece{9}{4}{\Kg}\shopiece{2}{6}{\Rg}\shopiece{5}{5}{\Ppg}\shopiece{8}{8}{\Lg}}{\shopiece{6}{1}{\Ks}\shopiece{5}{9}{\Rs}\shopiece{6}{5}{\Ss}\shopiece{1}{1}{\Kg}\shopiece{4}{4}{\Rpg}\shopiece{9}{8}{\Ppg}}
+\testwork{チェミナワ・ソフィア}{Чеминава София}{\shopiece{8}{7}{\Ks}\shopiece{6}{8}{\Bps}\shopiece{5}{5}{\Rs}\shopiece{1}{1}{\Gs}\shopiece{5}{2}{\Kg}\shopiece{2}{3}{\Rpg}\shopiece{3}{6}{\Pg}\shopiece{6}{9}{\Bg}}{\shopiece{4}{4}{\Ks}\shopiece{8}{6}{\Bs}\shopiece{6}{2}{\Gs}\shopiece{1}{5}{\Kg}\shopiece{7}{6}{\Rg}\shopiece{4}{5}{\Gg}}
+\testwork{チストヴ・オレグ}{Чистов Олег}{\shopiece{5}{7}{\Ks}\shopiece{4}{2}{\Bps}\shopiece{6}{2}{\Gs}\shopiece{7}{9}{\Nps}\shopiece{7}{1}{\Kg}\shopiece{4}{4}{\Rpg}\shopiece{6}{4}{\Gg}\shopiece{9}{8}{\Lg}}{\shopiece{4}{4}{\Ks}\shopiece{7}{3}{\Rps}\shopiece{1}{5}{\Sps}\shopiece{5}{9}{\Kg}\shopiece{6}{9}{\Rpg}\shopiece{3}{8}{\Pg}}
+\testwork{シェロヴ・ナザル}{Шеров Назар}{\shopiece{5}{6}{\Ks}\shopiece{3}{9}{\Rps}\shopiece{1}{7}{\Pps}\shopiece{7}{6}{\Ps}\shopiece{4}{1}{\Kg}\shopiece{4}{3}{\Rg}\shopiece{8}{4}{\Lpg}\shopiece{5}{2}{\Spg}}{\shopiece{4}{7}{\Ks}\shopiece{7}{4}{\Rs}\shopiece{5}{9}{\Gs}\shopiece{3}{5}{\Kg}\shopiece{3}{4}{\Bpg}\shopiece{8}{7}{\Pg}}
+
+%\testwork{アンヅリアノヴ・イリア}{Андрианов Илья}{\shopiece{7}{7}{\Ss}\shopiece{1}{1}{\Ks}\shopiece{7}{2}{\Ns}}{}
+%\testwork{ベクレネヴァ・ダリア}{Бекренева Дарья}{}{}
+%\testwork{ベリアコフ・ダニラ}{Беляков Данила}{}{}
+%\testwork{ボルゾフ・アルテミイ}{Борзов Артемий}{}{}
+%\testwork{ヴェショルコヴァ・ヴァルヴァラ}{Веселкова Варвара}{}{}
+%\testwork{ヴァシェンコヴ・アレクセイ}{Ващенков Алексей}{}{}
+%\testwork{ダニロヴァ・リュボヴィ}{Данилова Любовь}{}{}
+%\testwork{ドラガン・アリナ}{Драган Арина}{}{}
+%\testwork{ドブレンコ・デニス}{Добренко Денис}{}{}
+%\testwork{ドニャマリエヴ・ルスラヌ}{Дунямалиев Руслан}{}{}
+%\testwork{エヴドキモヴァ・アリョナ}{Eвдокимова Алёна}{}{}
+%\testwork{イエメリアヌチク・ウラヂミル}{Емельянчик Владимир}{}{}
+%\testwork{イワノヴ・アントヌ・アヌトノヴィチ}{Иванов Антон Антонович}{}{}
+%\testwork{イワノヴ・アントヌ・オレゴヴィチ}{Иванов Антон Олегович}{}{}
+%\testwork{カラコゾヴ・パヴェル}{Каракозов Павел}{}{}
+%\testwork{ナザロヴ・セルゲイ}{Назаров Сергей}{}{}
+%\testwork{ネマトヴァ・リナタ}{Ниматова Рената}{}{}
+%\testwork{パルホメンコ・ゲオルギイ}{Пархоменко Георгий}{}{}
+%\testwork{ルビナ・オレシャ}{Рубина Олеся}{}{}
+%\testwork{セレブリャコヴ・イエヴゲニイ}{Серебряков Евгений}{}{}
+%\testwork{セミョノヴ天山スキイ・イェゴル}{Семенов Тянь-Шанский Егор}{}{}
+%\testwork{スホムリン・フィオドル}{Сухомлин Фёдор}{}{}
+%\testwork{ツラヴィン・アレクサンデル}{Травин Александр}{}{}
+%\testwork{トルカチョヴ・キリル}{Толкачёв Кирилл}{}{}
+%\testwork{チェクマリョヴ・ヂミツリイ}{Чекмарёв Дмитрий}{}{}
+%\testwork{チェミナワ・ソフィア}{Чеминава София}{}{}
+%\testwork{チストヴ・オレグ}{Чистов Олег}{}{}
+%\testwork{シェロヴ・ナザル}{Шеров Назар}{}{}
+
+\end{CJK}
+
+
+
+\end{document}
